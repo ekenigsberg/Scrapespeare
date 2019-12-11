@@ -1,0 +1,9 @@
+notes on scraping:
+
+1) scraping as bytes, instead of as string, saves the trouble of having to look for individual problematic characters
+    need to open text file using bytes, ie, open(strFile, 'ab')
+    need to use .encode(encoding='utf-8', errors='ignore') to write lines
+
+2) look out for wide tooltips, marked by the tags <span class="noFear__tooltip__popup"><h4 class="noFear__tooltip__popup__heading">
+
+3) couldn't get weasyprint to print landscape pdf
